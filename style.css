@@ -45,6 +45,7 @@ h2.subtitle {
     font-weight: 700;
     line-height: 1;
     margin: 0 2rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .countdown-el {
