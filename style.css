@@ -20,9 +20,10 @@ body {
 }
 
 h1 {
-    margin-top: 150px;
+    margin-top: 80px;
+    margin-bottom: -40px;
     font-size: 5rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 h2.subtitle {
@@ -30,7 +31,7 @@ h2.subtitle {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 8px;
-    margin-top: -4rem;
+    margin-bottom: 200px;
 }
 
 .countdown-container {
@@ -55,6 +56,16 @@ h2.subtitle {
 .countdown-el span {
     font-size: 1.5rem;
     font-weight: 100;
+}
+
+.buttons img {
+    background: none;
+    margin-top: 20px;
+    max-width: 100px;
+}
+
+.buttons img:hover {
+    box-shadow: 0 4px 8px 0 rgba(5, 70, 251, 0.425), 0 6px 20px 0 rgba(4, 145, 247, 0.411);
 }
 
 @media only screen and (max-width: 750px) {
