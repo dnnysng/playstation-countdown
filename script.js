@@ -3,6 +3,8 @@ const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
 const secondsEl = document.getElementById('seconds');
 
+const metaDesc = document.getElementById('meta-description');
+
 const release = '12 Nov 2020';
 
 function countdown() {
@@ -20,6 +22,7 @@ function countdown() {
     hoursEl.innerHTML = formatTime(hours);
     minutesEl.innerHTML = formatTime(minutes);
     secondsEl.innerHTML = formatTime(seconds);
+    metaDesc.innerHTML = `The future of gaming begins in ${days} days. Are you ready?`;
 }
 
 function formatTime(time) {
