@@ -20,6 +20,10 @@
 <body>
     <h1>PLAYSTATION 5</h1>
     <h2 class="subtitle">the future of gaming</h2>
+    <div id=square></div>
+    <div id=triangle></div>
+    <div id=circle></div>
+    <div id=cross></div>
     <div class="countdown-container">
         <div class="countdown-el days-c">
             <p id="days" class="big-text">0</p>
@@ -39,7 +43,9 @@
         </div>
     </div>
     <div class="buttons">
-        <a href="/index.html">
+
+        <!-- Trigger/Open The Modal -->
+        <a id="myBtn">
             <?xml version="1.0" encoding="UTF-8"?>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150pt" height="149.999998pt" viewBox="0 0 150 149.999998" version="1.2">
                 <g id="surface1">
@@ -48,6 +54,29 @@
                 </g>
             </svg>
         </a>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="spec-info">
+                <img src="/images/ps5-render.png" alt="Playstation 5 Console">
+                <ul>
+                    <h3>System Specifications</h3>
+                    <li>CPU: AMD Zen 2-based CPU with 8 cores at 3.5GHz</li>
+                    <li>GPU: 10.28 TFLOPS, 36 Cs at 2.23GHz</li>
+                    <li>GPU architecture: Custom RDNA 2</li>
+                    <li>Memory: 16GB GDDR6 / 256-bit</li>
+                    <li>Memory bandwidth: 448GB/s</li>
+                    <li>Internal Storage: Custom 825GB SSD</li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
         <a href="/index.html">
             <?xml version="1.0" encoding="UTF-8"?>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150pt" height="149.999998pt" viewBox="0 0 150 149.999998" version="1.2">
@@ -92,5 +121,6 @@
         </a>
     </div>
     <script src="script.js"></script>
+    <script src="modal.js"></script>
 </body>
 </html>
