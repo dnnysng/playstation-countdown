@@ -58,14 +58,18 @@ h2.subtitle {
     font-weight: 100;
 }
 
-.buttons img {
-    background: none;
+svg {
     margin-top: 20px;
     max-width: 100px;
 }
 
-.buttons img:hover {
-    box-shadow: 0 4px 8px 0 rgba(5, 70, 251, 0.425), 0 6px 20px 0 rgba(4, 145, 247, 0.411);
+svg:hover {
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(5, 70, 251, 1));
+    filter: drop-shadow(0px 0px 5px blue);
+}
+
+svg path:hover {
+    fill: red;
 }
 
 @media only screen and (max-width: 750px) {
