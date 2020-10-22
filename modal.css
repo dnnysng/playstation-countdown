@@ -1,0 +1,120 @@
+.modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .modal-window:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window > div {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 2em;
+    background: rgb(8,52,165);
+    background: linear-gradient(0deg, rgba(8,52,165,1) 0%, rgba(10,44,190,1) 19%, rgba(21,108,236,1) 42%, rgba(36,155,238,1) 65%);
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  .modal-window header {
+    font-weight: bold;
+  }
+  .modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+  
+  .modal-close {
+    color: white;
+    line-height: 50px;
+    font-size: 120%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    margin-right: -12px;
+  }
+  .modal-close:hover {
+    color: black;
+  }
+
+  a {
+    color: inherit;
+  }
+  
+  .container {
+    display: grid;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  
+  .modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  
+  small {
+    color: #aaa;
+  }
+
+  .games-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .game {
+    max-width: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+  }
+
+  .game:hover {
+    -webkit-filter: drop-shadow(0px 0px 10px blue);
+    filter: drop-shadow(0px 0px 10px blue);
+    max-width: 250px;
+    transform: scale(1.5rem);
+    transition: all .5s;
+  }
+
+  .game img {
+    max-height: 400px;
+  }
+
+  .game h1 {
+    position: relative;
+  }
+
+  .game-info {
+    text-align: center;
+  }
+
+  .game-info h2 {
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    font-size: 1.3rem;
+  }
+
+  .game-info h3 {
+    font-size: .8rem;
+    top: -10;
+  }

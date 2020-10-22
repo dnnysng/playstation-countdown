@@ -14,16 +14,16 @@
 
     <title>Playstation 5 Countdown</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="modal.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- The title and countdown -->
     <h1>PLAYSTATION 5</h1>
     <h2 class="subtitle">the future of gaming</h2>
-    <div id=square></div>
-    <div id=triangle></div>
-    <div id=circle></div>
-    <div id=cross></div>
+
+    <!-- countdown -->
     <div class="countdown-container">
         <div class="countdown-el days-c">
             <p id="days" class="big-text">0</p>
@@ -44,8 +44,9 @@
     </div>
     <div class="buttons">
 
-        <!-- Trigger/Open The Modal -->
-        <a id="myBtn">
+        <!-- square button -->
+
+        <a class="btn" href="#square-modal">
             <?xml version="1.0" encoding="UTF-8"?>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150pt" height="149.999998pt" viewBox="0 0 150 149.999998" version="1.2">
                 <g id="surface1">
@@ -55,29 +56,27 @@
             </svg>
         </a>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div class="spec-info">
-                <img src="images/ps5-render.png" alt="Playstation 5 Console">
-                <ul>
-                    <h3>System Specifications</h3>
-                    <li>CPU: AMD Zen 2-based CPU with 8 cores at 3.5GHz</li>
-                    <li>GPU: 10.28 TFLOPS, 36 Cs at 2.23GHz</li>
-                    <li>GPU architecture: Custom RDNA 2</li>
-                    <li>Memory: 16GB GDDR6 / 256-bit</li>
-                    <li>Memory bandwidth: 448GB/s</li>
-                    <li>Internal Storage: Custom 825GB SSD</li>
-                </ul>
+        <div id="square-modal" class="modal-window">
+            <div>
+                <a href="#" title="Close" class="modal-close">x</a>
+                <div class="spec-info">
+                    <img src="images/ps5-render.png" alt="Playstation 5 Console">
+                    <ul>
+                        <h3>System Specifications</h3>
+                        <li>CPU: AMD Zen 2-based CPU with 8 cores at 3.5GHz</li>
+                        <li>GPU: 10.28 TFLOPS, 36 Cs at 2.23GHz</li>
+                        <li>GPU architecture: Custom RDNA 2</li>
+                        <li>Memory: 16GB GDDR6 / 256-bit</li>
+                        <li>Memory bandwidth: 448GB/s</li>
+                        <li>Internal Storage: Custom 825GB SSD</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        
+        <!-- triangle button -->
 
-        </div>
-
-        <a href="/index.html">
+        <a class="btn" href="#triangle-modal">
             <?xml version="1.0" encoding="UTF-8"?>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150pt" height="149.999998pt" viewBox="0 0 150 149.999998" version="1.2">
                 <defs>
@@ -93,6 +92,44 @@
                 </g>
             </svg>
         </a>
+
+        <div id="triangle-modal" class="modal-window">
+            <div>
+                <a href="#" title="Close" class="modal-close">x</a>
+                <h1>Exclusive Games</h1>
+                <div class="games-container">
+                    <div class="game">
+                        <div class="game-info">
+                            <h2>HORIZON</h2>
+                            <p>Forbidden West</p>
+                            <img src="/images/horizon.jpg" alt="horizon-thumbnail">
+                        </div>
+                    </div>
+                    <div class="game">
+                        <div class="game-info">
+                            <h2>Spider-Man</h2>
+                            <p>Miles Morales</p>
+                            <img src="/images/spiderman.png" alt="horizon-thumbnail">
+                        </div>
+                    </div>
+                    <div class="game">
+                        <div class="game-info">
+                            <h2>GRAN</h2>
+                            <p>Turismo 7</p>
+                            <img src="/images/gran-turismo.jpg" alt="horizon-thumbnail">
+                        </div>
+                    </div>
+                    <div class="game">
+                        <div class="game-info">
+                            <h2>FINAL</h2>
+                            <p>Fantasy XVI</p>
+                            <img src="/images/final-fantasy-xvi.jpg" alt="horizon-thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <a href="/index.html">
             <?xml version="1.0" encoding="UTF-8"?>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150pt" height="149.999998pt" viewBox="0 0 150 149.999998" version="1.2">
