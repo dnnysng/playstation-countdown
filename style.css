@@ -210,3 +210,31 @@ a {
   .right {
     max-width: 500px;
   }
+
+  .email-section {
+      max-width: 400px;
+  }
+
+  #email-sub {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      justify-content: center;
+      padding: 20px;
+  }
+
+  #email-sub input[type="email"] {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+  }
+
+  #email-sub input[type="submit"] {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    text-transform: capitalize;
+    border: none;
+  }

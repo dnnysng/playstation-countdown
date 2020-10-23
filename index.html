@@ -87,7 +87,7 @@
                     </clipPath>
                     </defs>
                     <g id="surface1">
-                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(1.179504%,86.669922%,35.289001%);fill-opacity:1;" d="M 75 21 C 104.777344 21 129 45.222656 129 75 C 129 104.777344 104.777344 129 75 129 C 45.222656 129 21 104.777344 21 75 C 21 45.222656 45.222656 21 75 21 M 75 15 C 41.863281 15 15 41.863281 15 75 C 15 108.136719 41.863281 135 75 135 C 108.136719 135 135 108.136719 135 75 C 135 41.863281 108.136719 15 75 15 Z M 75 15 "/>
+                    <path style=" stroke:none;fill-rule:nonzero;fill:rgb(3, 221, 90);fill-opacity:1;" d="M 75 21 C 104.777344 21 129 45.222656 129 75 C 129 104.777344 104.777344 129 75 129 C 45.222656 129 21 104.777344 21 75 C 21 45.222656 45.222656 21 75 21 M 75 15 C 41.863281 15 15 41.863281 15 75 C 15 108.136719 41.863281 135 75 135 C 108.136719 135 135 108.136719 135 75 C 135 41.863281 108.136719 15 75 15 Z M 75 15 "/>
                     <g clip-path="url(#clip1)" clip-rule="nonzero">
                     <path style=" stroke:none;fill-rule:nonzero;fill:rgb(1.179504%,86.669922%,35.289001%);fill-opacity:1;" d="M 41.210938 99.046875 L 108.617188 99.046875 L 74.914062 42.046875 Z M 45.75 96.453125 L 74.914062 47.140625 L 104.074219 96.453125 Z M 45.75 96.453125 "/>
                     </g>
@@ -192,7 +192,9 @@
                 </div>
             </div>
 
-            <a href="/index.html">
+            <!-- cross button -->
+
+            <a class="btn" href="#cross-modal">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150pt" height="149.999998pt" viewBox="0 0 150 149.999998" version="1.2">
                     <defs>
@@ -209,10 +211,23 @@
                     </g>
                 </svg>
             </a>
+
+            <div id="cross-modal" class="modal-window">
+                <div>
+                    <a href="#" title="Close" class="modal-close">x</a>
+                    <h1>don't miss out!</h1>
+                    <div class="email-section">
+                        <p>Subscribe to our newsletter to be among the first to know about any Playstation 5 news or updates!</p>
+                        <form id="email-sub" action="">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="submit" value="subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
     <script src="script.js"></script>
-    <script src="modal.js"></script>
 </body>
 </html>
