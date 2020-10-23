@@ -77,7 +77,7 @@ svg {
 svg:hover {
     -webkit-filter: drop-shadow(0px 0px 10px blue);
     filter: drop-shadow(0px 0px 10px blue);
-    max-width: 120px;
+    max-width: 150px;
     transform: scale(1.5rem);
     transition: all .5s;
 }
@@ -165,7 +165,7 @@ a {
   }
 
   .game:hover {
-    max-width: 250px;
+    max-width: 400px;
     transform: scale(1.5rem);
     transition: all .5s;
   }
