@@ -5,22 +5,28 @@
 body {
     font-family: 'Work Sans', sans-serif;
     background: black;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.cd-container {
+    margin: 0 auto;
+    max-width: 1200px;
     background-image: url('images/controller.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: none;
     align-items: center;
-    justify-content: center;
-    color: white;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
 }
 
 h1 {
-    margin-top: 80px;
+    text-transform: uppercase;
+    margin-top: 70px;
     margin-bottom: -40px;
     font-size: 5rem;
     font-weight: 700;
@@ -80,63 +86,14 @@ a {
     text-decoration: none;
 }
 
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: black;
-    background: url('images/ps-background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: none;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 100px;
-    border: 2px solid white;
-    border-radius: 20px;
-    width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 980px;
-  }
+.spec-info img {
+    max-width: 300px;
+}
 
-  .spec-info img {
-      max-width: 300px;
-  }
-
-  .spec-info {
-      display: flex;
-      flex-wrap: wrap;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    position: relative;
-    top: -70px;
-    right: -60px;
-
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+.spec-info {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 @media only screen and (max-width: 750px) {
 
@@ -193,3 +150,63 @@ a {
         font-size: 2rem;
     }
 }
+
+.games-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .game {
+    max-width: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+  }
+
+  .game:hover {
+    max-width: 250px;
+    transform: scale(1.5rem);
+    transition: all .5s;
+  }
+
+  .game img {
+    max-height: 400px;
+  }
+
+  .game h1 {
+    position: relative;
+  }
+
+  .game-info {
+    text-align: center;
+  }
+
+  .game-info h2 {
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    font-size: 1.3rem;
+  }
+
+  .game-info h3 {
+    font-size: .8rem;
+    top: -10;
+  }
+
+  .feature {
+    display: flex;
+  }
+
+  .left, .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left img {
+    max-width: 100px;
+  }
+
+  .right {
+    max-width: 500px;
+  }
