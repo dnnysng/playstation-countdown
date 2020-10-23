@@ -30,9 +30,11 @@
     border: 2px solid white;
     border-radius: 10px;
   }
+  
   .modal-window header {
     font-weight: bold;
   }
+
   .modal-window h1 {
     font-size: 150%;
     margin: 0 0 15px;
