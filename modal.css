@@ -18,7 +18,7 @@
     pointer-events: auto;
   }
   .modal-window > div {
-    width: max-content;
+    max-width: max-content;
     position: absolute;
     top: 50%;
     left: 50%;
