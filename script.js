@@ -3,7 +3,7 @@ const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
 const secondsEl = document.getElementById('seconds');
 
-const release = '13 Aug 2021';
+const release = '1 Jan 2022';
 
 function countdown() {
     const releaseDate = new Date(release);
